@@ -1,0 +1,211 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --hover-text-color: #2196f3;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --black: #000000;
+  --white: #ffffff;
+  --secondary-bg: #f5f4fa;
+  --footer-bg: #2f303a;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+  background-color: var(--white);
+}
+
+/* Лого */
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  color: var(--hover-text-color);
+}
+
+.logo-black {
+  color: var(--black);
+}
+
+/* Навигация и авторизация */
+
+.site-nav .link,
+.aut-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--title-text-color);
+}
+
+.aut-nav .link {
+  color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.aut-nav .link:hover,
+.aut-nav .link:focus {
+  color: var(--hover-text-color);
+}
+
+.site-nav .current {
+  color: var(--hover-text-color);
+}
+
+/* Шапка */
+
+.hero {
+  background-color: var(--footer-bg);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--white);
+}
+
+.hero-button {
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--white);
+  background-color: var(--hover-text-color);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--title-text-color);
+  background-color: var(--white);
+}
+
+/* Cекции */
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  color: var(--title-text-color);
+}
+
+.peculiarities-list-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--title-text-color);
+}
+
+.team {
+  background-color: var(--secondary-bg);
+}
+
+.team-list {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+
+  background-color: var(--white);
+}
+
+.team-list-title {
+  font-weight: 500;
+
+  color: var(--title-text-color);
+}
+
+/* Портфолио */
+
+/* Кнопки */
+
+.button {
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+
+  color: var(--title-text-color);
+  background-color: var(--white);
+}
+
+/* Проекти */
+
+.button:hover,
+.button:focus {
+  color: var(--white);
+  background-color: var(--hover-text-color);
+}
+
+.projects-list {
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.projects-list-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--title-text-color);
+}
+
+/* Подвал */
+
+.footer {
+  background-color: var(--footer-bg);
+}
+
+.logo-white {
+  color: var(--white);
+}
+
+.address {
+  font-style: normal;
+
+  color: var(--footer-text-color);
+}
+
+.map {
+  color: var(--white);
+}
+
+.address .link:hover,
+.address .link:focus {
+  color: var(--hover-text-color);
+}

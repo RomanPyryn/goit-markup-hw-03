@@ -19,7 +19,17 @@ html {
   box-sizing: inherit;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .list {
+  padding: 0;
+  margin: 0;
   list-style-type: none;
 }
 
@@ -36,6 +46,15 @@ body {
 
   color: var(--primary-text-color);
   background-color: var(--white);
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid tomato;
 }
 
 /* Лого */
@@ -84,14 +103,17 @@ body {
 /* Шапка */
 
 .hero {
+  text-align: center;
+
   background-color: var(--footer-bg);
 }
 
 .hero-title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -99,14 +121,16 @@ body {
 }
 
 .hero-button {
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 32px;
+  border: transparent;
+  border-radius: 4px;
   cursor: pointer;
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
 
   color: var(--white);
@@ -121,7 +145,14 @@ body {
 
 /* Cекции */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -130,7 +161,12 @@ body {
   color: var(--title-text-color);
 }
 
+.peculiarities {
+  padding-bottom: 0;
+}
+
 .peculiarities-list-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -152,16 +188,33 @@ body {
 }
 
 .team-list-title {
+  margin-bottom: 10px;
   font-weight: 500;
 
   color: var(--title-text-color);
 }
 
+.team-img {
+  margin-bottom: 30px;
+}
+
+.team-text {
+  padding-bottom: 30px;
+}
+
 /* Портфолио */
 
-/* Кнопки */
+/* Проекти */
+
+.filters {
+  margin-bottom: 34px;
+}
 
 .button {
+  display: inline-block;
+  padding: 6px 22px;
+  border: transparent;
+  border-radius: 4px;
   cursor: pointer;
 
   font-weight: 500;
@@ -170,10 +223,8 @@ body {
   text-align: center;
 
   color: var(--title-text-color);
-  background-color: var(--white);
+  background-color: var(--secondary-bg);
 }
-
-/* Проекти */
 
 .button:hover,
 .button:focus {
@@ -187,6 +238,8 @@ body {
 }
 
 .projects-list-title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -195,10 +248,22 @@ body {
   color: var(--title-text-color);
 }
 
+.project-content {
+  padding: 20px 24px;
+}
+
 /* Подвал */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--footer-bg);
+}
+
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .logo-white {
@@ -212,7 +277,14 @@ body {
 }
 
 .map {
+  display: inline-block;
+  margin-bottom: 9px;
   color: var(--white);
+}
+
+.mail {
+  display: inline-block;
+  margin-bottom: 9px;
 }
 
 .address .link:hover,

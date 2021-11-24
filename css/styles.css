@@ -9,6 +9,7 @@
   --footer-bg: #2f303a;
   --border-color: #eeeeee;
   --card-set-gap: 30px;
+  --title-gap: 50px;
 }
 
 html {
@@ -61,7 +62,6 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid tomato;
 }
 
 .item + .item {
@@ -74,6 +74,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  border-bottom: 1px solid #ececec;
 }
 
 .site-nav {
@@ -88,7 +90,7 @@ body {
 
 .site-nav .item + .item,
 .aut-nav .item + .item {
-  margin-left: 50px;
+  margin-left: var(--title-gap);
 }
 
 /* Лого */
@@ -146,7 +148,6 @@ body {
 }
 
 .hero-title {
-  width: 696px;
   margin-bottom: var(--card-set-gap);
 
   color: var(--white);
@@ -187,7 +188,7 @@ body {
 }
 
 .section-title {
-  margin-bottom: 50px;
+  margin-bottom: var(--title-gap);
 
   color: var(--title-text-color);
   font-weight: 700;
@@ -270,11 +271,9 @@ body {
 /* Проекти */
 
 .filters {
-  margin-bottom: 50px;
+  margin-bottom: var(--title-gap);
   display: flex;
   justify-content: center;
-
-  outline: 1px solid tomato;
 }
 
 .filters-item + .filters-item {
@@ -311,17 +310,12 @@ body {
 
   font-size: 16px;
   line-height: 1.87;
-  outline: 1px solid blue;
 }
 
 .projects-card {
   flex-basis: calc(100% / 3 - 30px);
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
-
-  background: var(--white);
-  border: 1px solid var(--border-color);
-  box-sizing: border-box;
 }
 
 .projects-list-title {
@@ -337,6 +331,9 @@ body {
 
 .project-content {
   padding: 20px 24px;
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  box-sizing: border-box;
 }
 
 /* Подвал */
@@ -364,17 +361,14 @@ body {
 }
 
 .map {
-  display: inline-block;
-  margin-bottom: 9px;
   color: var(--white);
-}
-
-.mail {
-  display: inline-block;
-  margin-bottom: 9px;
 }
 
 .address .link:hover,
 .address .link:focus {
   color: var(--hover-text-color);
+}
+
+.address-item + .address-item {
+  margin-top: 9px;
 }

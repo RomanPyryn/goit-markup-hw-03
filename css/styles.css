@@ -32,10 +32,11 @@ p {
 
 img {
   display: block;
+  height: auto;
   max-width: 100%;
 }
 
-.list {
+ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -70,17 +71,18 @@ body {
 
 /* Верхняя линия */
 
-.heder {
+header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  border-bottom: 1px solid #ececec;
 }
 
 .site-nav {
   display: flex;
-  margin-left: 93px;
 }
 
 .aut-nav {
@@ -96,13 +98,14 @@ body {
 /* Лого */
 
 .logo {
+  margin-right: 93px;
+
+  color: var(--hover-text-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-
-  color: var(--hover-text-color);
 }
 
 .logo-black {
@@ -142,6 +145,7 @@ body {
 /* Шапка */
 
 .hero {
+  padding: 200px 0;
   text-align: center;
 
   background-color: var(--footer-bg);
@@ -201,8 +205,15 @@ body {
   padding-bottom: 0;
 }
 
-.peculiarities-title {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .peculiarities-list {
@@ -254,18 +265,9 @@ body {
   color: var(--title-text-color);
 }
 
-.team-img {
-  margin-bottom: var(--card-set-gap);
-}
-
-.team-text {
+.team-content {
+  padding-top: var(--card-set-gap);
   padding-bottom: var(--card-set-gap);
-}
-
-/* Портфолио */
-
-.portfolio-title {
-  display: none;
 }
 
 /* Проекти */

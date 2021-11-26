@@ -11,21 +11,18 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css"
-    />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!--Верхняя линия-->
     <header>
-      <div class="container heder">
+      <div class="container header">
         <a class="logo link" href="./index.html"
           >Web<span class="logo-black">Studio</span></a
         >
         <nav>
-          <ul class="site-nav list">
+          <ul class="site-nav">
             <li class="item">
               <a class="link current" href="./index.html">Студия</a>
             </li>
@@ -37,7 +34,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="aut-nav list">
+        <ul class="aut-nav">
           <li class="item">
             <a class="link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
@@ -52,15 +49,18 @@
     <!--Главная-->
     <main>
       <!--Шапка-->
-      <section class="section hero">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+      <section class="hero">
+        <h1 class="hero-title">
+          Эффективные решения <br />
+          для вашего бизнеса
+        </h1>
         <button class="hero-button" type="button">Заказать услугу</button>
       </section>
       <!--Особенности-->
       <section class="section peculiarities">
         <div class="container">
-          <h2 class="peculiarities-title">Особенности</h2>
-          <ul class="peculiarities-list list">
+          <h2 class="visually-hidden">Особенности</h2>
+          <ul class="peculiarities-list">
             <li class="item">
               <h3 class="peculiarities-list-title">Внимание к деталям</h3>
               <p>
@@ -96,7 +96,7 @@
       <section class="section">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul class="work list">
+          <ul class="work">
             <li class="item">
               <img src="./images/img1.jpg" alt="Планшет на столе" width="370" />
             </li>
@@ -117,7 +117,7 @@
       <section class="section team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="team-list list">
+          <ul class="team-list">
             <li class="item team-card">
               <img
                 class="team-img"
@@ -125,8 +125,10 @@
                 alt="Игорь Демьяненко"
                 width="270"
               />
-              <h3 class="team-list-title">Игорь Демьяненко</h3>
-              <p class="team-text">Product Designer</p>
+              <div class="team-content">
+                <h3 class="team-list-title">Игорь Демьяненко</h3>
+                <p>Product Designer</p>
+              </div>
             </li>
             <li class="item team-card">
               <img
@@ -135,8 +137,10 @@
                 alt="Ольга Репина"
                 width="270"
               />
-              <h3 class="team-list-title">Ольга Репина</h3>
-              <p class="team-text">Frontend Developer</p>
+              <div class="team-content">
+                <h3 class="team-list-title">Ольга Репина</h3>
+                <p>Frontend Developer</p>
+              </div>
             </li>
             <li class="item team-card">
               <img
@@ -145,8 +149,10 @@
                 alt="Николай Тарасов"
                 width="270"
               />
-              <h3 class="team-list-title">Николай Тарасов</h3>
-              <p class="team-text">Marketing</p>
+              <div class="team-content">
+                <h3 class="team-list-title">Николай Тарасов</h3>
+                <p>Marketing</p>
+              </div>
             </li>
             <li class="item team-card">
               <img
@@ -155,8 +161,10 @@
                 alt="Михаил Ермаков"
                 width="270"
               />
-              <h3 class="team-list-title">Михаил Ермаков</h3>
-              <p class="team-text">UI Designer</p>
+              <div class="team-content">
+                <h3 class="team-list-title">Михаил Ермаков</h3>
+                <p>UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -169,7 +177,7 @@
           >Web<span class="logo-white">Studio</span></a
         >
         <address class="address">
-          <ul class="list">
+          <ul>
             <li class="address-item">
               <a
                 class="map link"
